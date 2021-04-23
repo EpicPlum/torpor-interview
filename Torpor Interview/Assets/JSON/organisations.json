@@ -1,0 +1,7 @@
+{
+  { "KGB": [ "Info", "Structure"] },
+
+  { "CIA": ["Info", "Structure"] },
+
+  { "FBI": ["Info", "Structure"] }
+}

@@ -1,0 +1,11 @@
+{
+  { "North America": [ "America", "Canada", "Mexico", "Belize"] },
+
+  { "South America": [ "Brazil", "Peru", "Chile"] },
+
+  { "Europe": [ "Germany", "Spain", "Turkey", "Italy" ] },
+
+  { "Africa": [ "Eritrea", "Madagascar", "Nigeria", "Egypt" ] },
+
+  { "Asia": [ "China", "Japan", "Russia", "Thailand" ] }
+}

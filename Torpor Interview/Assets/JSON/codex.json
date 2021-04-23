@@ -1,0 +1,16 @@
+{
+
+
+
+
+  { "Characters": [ "Cabinet", "Family", "Party Leaders", "The Assembly", "The Supreme Court" ] },
+
+  { "Locations": ["North America", "South America", "Europe", "Africa", "Asia"] },
+
+  { "Organisations": ["KGB", "CIA", "FBI"] },
+
+  { "History": ["Greek", "Roman", "Chinese", "Japanese"] },
+
+  "firstName": "Petr",
+  "lastName": "Vectern"
+}

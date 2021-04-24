@@ -864,7 +864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I was elected
+  m_Text: 
 --- !u!222 &773416218
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1227,7 +1227,7 @@ GameObject:
   - component: {fileID: 1477203163}
   - component: {fileID: 1477203162}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: NoteBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1240,9 +1240,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477203160}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5695, y: 1.5695, z: 1.5695}
+  m_LocalScale: {x: 1.5695002, y: 1.5695, z: 0}
   m_Children:
   - {fileID: 773416216}
   - {fileID: 672063005}
@@ -1251,7 +1251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -654.1, y: 144.8}
+  m_AnchoredPosition: {x: -654.0951, y: 144.79999}
   m_SizeDelta: {x: 296.72815, y: 166.7514}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1477203162
@@ -2127,6 +2127,7 @@ GameObject:
   - component: {fileID: 1316920834009140250}
   - component: {fileID: 1316920834009140251}
   - component: {fileID: 1316920834009140253}
+  - component: {fileID: 1316920834009140252}
   m_Layer: 0
   m_Name: AddNoteButton
   m_TagString: Untagged
@@ -2171,6 +2172,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1316920834009140252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316920834009140249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3dde4a2d1591ec34fb8783279d56ecc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  input: {fileID: 1477203162}
 --- !u!114 &1316920834009140253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2199,11 +2213,11 @@ MonoBehaviour:
     m_ColorMultiplier: 4.03
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 21300000, guid: e9002365925bc594290979f2f03396a2,
+    m_HighlightedSprite: {fileID: 21300000, guid: a4643d4bf3fdc4349833194c186f496a,
       type: 3}
-    m_PressedSprite: {fileID: 21300000, guid: e9002365925bc594290979f2f03396a2, type: 3}
-    m_SelectedSprite: {fileID: 21300000, guid: e9002365925bc594290979f2f03396a2, type: 3}
-    m_DisabledSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 21300000, guid: a4643d4bf3fdc4349833194c186f496a, type: 3}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 21300000, guid: 33297f58905a1874ba7da620b5a45fd3, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -2215,53 +2229,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 1316920834009140252}
+        m_MethodName: addInput
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

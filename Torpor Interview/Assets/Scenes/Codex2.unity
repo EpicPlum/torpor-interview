@@ -1093,7 +1093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &147934758
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1104,7 +1104,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -433.68945}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 2120444802}
   m_Father: {fileID: 46715743}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9666,6 +9667,156 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &2120444801
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 147934758}
+    m_Modifications:
+    - target: {fileID: 2672082234327434701, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Sarah
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082234327434702, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: Sarah Salamander
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082234608174643, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: JIM JIMS
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082235066609001, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: Harry Hare
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082235066609004, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Harry
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082235160187817, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Chuck
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082235160187818, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: Chuck Chubacabra
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082235208779786, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: SARAH SALAMANDER
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082235864882125, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Jim
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082235864882126, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: Jim Jims
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236061778591, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018504, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Name
+      value: Entries_Centered
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018504, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.546997
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 433.68945
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236172532836, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: HARRY HARE
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236323058244, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_Text
+      value: CHUCK CHUBACABRA
+      objectReference: {fileID: 0}
+    - target: {fileID: 2672082236323058618, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3977
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f454c1b52ab5474eb0192fb1d71d1cb, type: 3}
+--- !u!4 &2120444802 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2672082236115018507, guid: 4f454c1b52ab5474eb0192fb1d71d1cb,
+    type: 3}
+  m_PrefabInstance: {fileID: 2120444801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2136549726
 GameObject:
   m_ObjectHideFlags: 0

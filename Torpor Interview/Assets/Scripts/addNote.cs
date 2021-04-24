@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,6 +8,8 @@ using UnityEngine.UI;
 public class addNote : MonoBehaviour
 {
     public InputField input;
+    public TextAsset output;
+    public StreamWriter writer;
 
 
     public class inputData
@@ -16,11 +19,32 @@ public class addNote : MonoBehaviour
 
     public void addInput()
     {
+        if(GameObject.Find("Act1").activeInHierarchy)
+        {
+            writer = new StreamWriter("act1.json");
+        }
+
+        if (GameObject.Find("Act2").activeInHierarchy)
+        {
+            writer = new StreamWriter("act2.json");
+        }
+
+        if (GameObject.Find("Act3").activeInHierarchy)
+        {
+            writer = new StreamWriter("act3.json");
+        }
+
+        if (GameObject.Find("Act4").activeInHierarchy)
+        {
+            writer = new StreamWriter("act4.json");
+        }
+
         inputData data = new inputData();
         data.inputText = input.text;
 
         string json = JsonUtility.ToJson(data);
-        Debug.Log(json);
+
+        writer.Write(json);
     }
 
     // Start is called before the first frame update

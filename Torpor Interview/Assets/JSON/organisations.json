@@ -1,7 +1,7 @@
 {
   { "KGB": [ "Info", "Structure", "Members"] },
 
-  { "CIA": [ "Info", "Structure", "Members" ] },
+  { "CIA": [ "People", "Places", "Things" ] },
 
-  { "FBI": [ "Info", "Structure", "Members" ] }
+  { "FBI": [ "Activities", "Properties"] }
 }

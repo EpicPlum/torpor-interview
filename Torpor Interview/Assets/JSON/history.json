@@ -1,9 +1,9 @@
 {
   { "Greek": [ "Leaders", "Ideology", "Accomplishments"] },
 
-  { "Roman": [ "Leaders", "Ideology", "Accomplishments" ] },
+  { "Roman": [ "People", "Methods"] },
 
-  { "Chinese": [ "Leaders", "Ideology", "Accomplishments" ] },
+  { "Chinese": [ "Warriors", "Emperors", "Dynasties" ] },
 
-  { "Japanese": [ "Leaders", "Ideology", "Accomplishments" ] }
+  { "Japanese": [ "Regions", "Samurai", "Conflicts" ] }
 }

@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Codex.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
     path: Assets/Scenes/Notes.unity
     guid: 9d52b1077b5f7584786d27fc96328627
+  - enabled: 1
+    path: Assets/Scenes/Codex.unity
+    guid: 062a5157ecd371c4cb5b7cf2730c249b
   m_configObjects: {}

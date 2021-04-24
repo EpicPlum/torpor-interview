@@ -4,11 +4,16 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class Notes_Button : MonoBehaviour
+public class switchScenes : MonoBehaviour
 {
     public void Notes()
     {
         SceneManager.LoadScene("Notes");
+    }
+
+    public void Codex()
+    {
+        SceneManager.LoadScene("Codex");
     }
 
 }

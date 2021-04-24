@@ -1,11 +1,11 @@
 {
-  { "Cabinet": [ "Petr Vectern", "Lucian Galade", "Lileas Graf", "Symon Holl", "Iosef Lancea", "Daivid Wisci", "Nia Morgna", "Gus Manger", "Ciara Walda", "Paskal Beniwoll" ] },
+  { "topic1": [ "Petr Vectern", "Lucian Galade", "Lileas Graf", "Symon Holl", "Iosef Lancea", "Daivid Wisci", "Nia Morgna", "Gus Manger", "Ciara Walda", "Paskal Beniwoll" ] },
 
-  { "Family": [ "John Smith", "Harold Goldberg", "Sally Watson", "Jane Doe" },
+  { "topic2": [ "John Smith", "Harold Goldberg", "Sally Watson", "Jane Doe" },
 
-  { "Party Leaders": [ "Party Partyson", "Partridge Partyngton", "Patrick Party" ] },
+  { "topic3": [ "Party Partyson", "Partridge Partyngton", "Patrick Party" ] },
 
-  { "The Assembly": [ "Sarah Salamander", "Harry Hare", "Chuck Chubacabra", "Jim Jims" ] },
+  { "topic4": [ "Sarah Salamander", "Harry Hare", "Chuck Chubacabra", "Jim Jims" ] },
 
-  { "The Supreme Court": [ "Supreme Courtsworthy", "Kurt Guy", "Wanda Wonder", "Valerie Violin" ] }
+  { "topic5": [ "Supreme Courtsworthy", "Kurt Guy", "Wanda Wonder", "Valerie Violin" ] }
 }

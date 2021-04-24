@@ -10,9 +10,9 @@ public class addNote : MonoBehaviour
     public InputField input;
     public TextAsset output;
     public GameObject bullet;
-    private Transform bulletParent;
+    public Transform bulletParent;
     private string path;
-    private Vector3 lastBulletPos;
+    private Vector3 lastBulletPos = new Vector3(-7, 3.75f, 0);
 
 
 
@@ -24,7 +24,9 @@ public class addNote : MonoBehaviour
 
     public void addInput()
     {
-        if(GameObject.Find("Act1").activeInHierarchy && GameObject.Find("Act1") != null)
+       
+
+        if (GameObject.Find("Act1").activeInHierarchy && GameObject.Find("Act1") != null)
         {
             bulletParent = GameObject.Find("Act1").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act1.json";
@@ -32,19 +34,19 @@ public class addNote : MonoBehaviour
         }
         else if (GameObject.Find("Act2").activeInHierarchy && GameObject.Find("Act2") != null)
         {
-            bulletParent = GameObject.Find("Act2").transform;
+            //bulletParent = GameObject.Find("Act2").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act2.json";
             Debug.Log("Act2");
         }
         else if (GameObject.Find("Act3").activeInHierarchy && GameObject.Find("Act3") != null)
         {
-            bulletParent = GameObject.Find("Act3").transform;
+            //bulletParent = GameObject.Find("Act3").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act3.json";
             Debug.Log("Act3");
         }
         else if (GameObject.Find("Act4").activeInHierarchy && GameObject.Find("Act4") != null)
         {
-            bulletParent = GameObject.Find("Act4").transform;
+            //bulletParent = GameObject.Find("Act4").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act4.json";
             Debug.Log("Act4");
         }
@@ -62,16 +64,18 @@ public class addNote : MonoBehaviour
         data = JsonUtility.FromJson<inputData>(json);
         Debug.Log("Read");
 
-        lastBulletPos = new Vector3(-316, 235, 0);
-
         //create bullet object from prefab
         //use last y-value to determine position
         //instantiate as child of Act Object
-        GameObject bulletObj = Instantiate(bullet, new Vector3(0,0,0), Quaternion.identity, bulletParent);
-        //bulletObj.GetComponent<Text>().text = data.inputText;
-        //bulletObj.transform.position = lastBulletPos;
+        GameObject bulletObj = Instantiate(bullet) as GameObject;
+        bulletObj.transform.position = lastBulletPos;
+        bulletObj.transform.rotation = transform.rotation;
+        bulletObj.transform.SetParent(bulletParent);
+        //bulletObj.GetComponent<Text>().text = "pizza";
 
-        lastBulletPos.y -= 30;
+
+        lastBulletPos.y = lastBulletPos.y - 1;
+
     }
 
     // Start is called before the first frame update

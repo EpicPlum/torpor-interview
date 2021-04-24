@@ -351,7 +351,7 @@ GameObject:
   - component: {fileID: 5339635274807537524}
   - component: {fileID: 5339635274807537525}
   m_Layer: 0
-  m_Name: Petr
+  m_Name: CodexEntry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

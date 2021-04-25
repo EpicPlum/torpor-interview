@@ -23,7 +23,7 @@ public class Codex_Entries : MonoBehaviour
 
 
 
-
+    //sets all assets that arent in-use to an inactive state
     public void setAllInactive()
     {
 
@@ -35,6 +35,7 @@ public class Codex_Entries : MonoBehaviour
         var entries = GameObject.FindGameObjectsWithTag("Entry");
         var entryButtons = GameObject.FindGameObjectsWithTag("EntryButton");
 
+        //sets each entry inactive
         foreach(var i in entries)
         {
             //entryButton = GameObject.FindWithTag("EntryButton");
@@ -46,7 +47,7 @@ public class Codex_Entries : MonoBehaviour
             */
 
         }
-
+        //sets each entry button at forntSive 150 in RubikMedium
         foreach (var i in entryButtons)
         {
             //entryButton = GameObject.FindWithTag("EntryButton");
@@ -57,7 +58,7 @@ public class Codex_Entries : MonoBehaviour
         }
 
         gameObject.transform.GetChild(0).gameObject.SetActive(true);
-
+        //resets object names
         gameObject.tag = "EntryButton";
         gameObject.transform.GetChild(0).gameObject.tag = "Entry";
     }

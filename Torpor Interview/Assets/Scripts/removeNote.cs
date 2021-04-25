@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/*
+ * Incomplete file to fully realize removing a note from the Notes page
+ */
 public class removeNote : MonoBehaviour
 {
     private string path;

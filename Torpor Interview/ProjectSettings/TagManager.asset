@@ -8,6 +8,10 @@ TagManager:
   - Entry
   - CurrEntry
   - CurrEntryButton
+  - Topic
+  - Image
+  - Paragraph
+  - Title
   layers:
   - Default
   - TransparentFX

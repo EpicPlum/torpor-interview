@@ -834,7 +834,7 @@ Transform:
   - {fileID: 1211449998}
   - {fileID: 13234}
   m_Father: {fileID: 725189825}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &54648205
 GameObject:
@@ -7478,9 +7478,9 @@ RectTransform:
   m_Children:
   - {fileID: 358159734}
   - {fileID: 1603234240}
-  - {fileID: 115937690}
   - {fileID: 2140156396}
   - {fileID: 46715743}
+  - {fileID: 115937690}
   - {fileID: 1115274570}
   - {fileID: 1539707986}
   - {fileID: 1204859813}
@@ -13280,7 +13280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eebdd76239539e74ab6f48597e971a35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d66f5940fed040d458deacae37fa9280, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25097,7 +25097,7 @@ RectTransform:
   - {fileID: 1700845987}
   - {fileID: 904763589}
   m_Father: {fileID: 725189825}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31038,7 +31038,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eebdd76239539e74ab6f48597e971a35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 08d8c0bc550232b4893946f4cf1edee9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -32272,7 +32272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e0a1e5bf9001d9a4ca5f380be45316ef, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d66f5940fed040d458deacae37fa9280, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -38351,7 +38351,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eebdd76239539e74ab6f48597e971a35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5e3701dd65ceef45906a9fef6ccbdda, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

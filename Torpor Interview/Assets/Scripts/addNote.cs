@@ -14,6 +14,8 @@ public class addNote : MonoBehaviour
     private string path;
     private Vector3 lastBulletPos = new Vector3(-7, 3.75f, 0);
     private GameObject bulletObj;
+    private inputData data;
+    private int count = 0;
 
 
 
@@ -21,6 +23,13 @@ public class addNote : MonoBehaviour
     public class inputData
     {
         public string inputText;
+        public string inputText2;
+        public string inputText3;
+        public string inputText4;
+        public string inputText5;
+        public string inputText6;
+        public string inputText7;
+        public string inputText8;
     }
 
     public void addInput()
@@ -52,8 +61,40 @@ public class addNote : MonoBehaviour
             Debug.Log("Act4");
         }
 
-        inputData data = new inputData();
-        data.inputText = input.text;
+        data = new inputData();
+
+        if(count == 0)
+        {
+            data.inputText = input.text;
+        }
+        if (count == 1)
+        {
+            data.inputText2 = input.text;
+        }
+        if (count == 2)
+        {
+            data.inputText3 = input.text;
+        }
+        if (count == 3)
+        {
+            data.inputText4 = input.text;
+        }
+        if (count == 4)
+        {
+            data.inputText5 = input.text;
+        }
+        if (count == 5)
+        {
+            data.inputText6 = input.text;
+        }
+        if (count == 6)
+        {
+            data.inputText7 = input.text;
+        }
+        if (count == 7)
+        {
+            data.inputText8 = input.text;
+        }
 
         string json = JsonUtility.ToJson(data);
        
@@ -76,6 +117,8 @@ public class addNote : MonoBehaviour
 
 
         lastBulletPos.y = lastBulletPos.y - 1;
+        count++;
+
 
     }
 

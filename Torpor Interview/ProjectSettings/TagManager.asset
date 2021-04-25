@@ -5,13 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - EntryButton
-  - Entry
   - CurrEntry
   - CurrEntryButton
   - Topic
   - Image
   - Paragraph
   - Title
+  - Entry1
+  - Entry2
   layers:
   - Default
   - TransparentFX

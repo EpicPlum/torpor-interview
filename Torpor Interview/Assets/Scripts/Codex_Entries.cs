@@ -15,27 +15,27 @@ public class Codex_Entries : MonoBehaviour
     private string locationsPath = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\locations.json";
     private string organisationsPath = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\organisations.json";
     private string historyPath = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\history.json";
-    private GameObject[] entries;
-    private GameObject[] entryButtons;
-    private GameObject[] titles;
-    private GameObject[] images;
-    private GameObject[] paragraphs;
+    GameObject[] entries;
+    GameObject[] entryButtons;
+    GameObject[] titles;
+    GameObject[] images;
+    GameObject[] paragraphs;
 
 
 
 
     public void setAllInactive()
     {
-        entries = GameObject.FindGameObjectsWithTag("Entry");
-        entryButtons = GameObject.FindGameObjectsWithTag("EntryButton");
 
-    //GameObject entryButton;
-    //GameObject entry;
-    gameObject.tag = "CurrEntryButton";
+
+        //GameObject entryButton;
+        //GameObject entry;
+        gameObject.tag = "CurrEntryButton";
         gameObject.transform.GetChild(0).gameObject.tag = "CurrEntry";
-        
+        var entries = GameObject.FindGameObjectsWithTag("Entry");
+        var entryButtons = GameObject.FindGameObjectsWithTag("EntryButton");
 
-        foreach(GameObject i in entries)
+        foreach(var i in entries)
         {
             //entryButton = GameObject.FindWithTag("EntryButton");
             i.SetActive(false);
@@ -47,7 +47,7 @@ public class Codex_Entries : MonoBehaviour
 
         }
 
-        foreach (GameObject i in entryButtons)
+        foreach (var i in entryButtons)
         {
             //entryButton = GameObject.FindWithTag("EntryButton");
             //i.SetActive(false);
@@ -76,50 +76,36 @@ public class Codex_Entries : MonoBehaviour
 
     public void assignData()
     {
+        entries = GameObject.FindGameObjectsWithTag("Entry");
         entryButtons = GameObject.FindGameObjectsWithTag("EntryButton");
         titles = GameObject.FindGameObjectsWithTag("Title");
         images = GameObject.FindGameObjectsWithTag("Image");
         paragraphs = GameObject.FindGameObjectsWithTag("Paragraph");
 
-    string json = File.ReadAllText(characterPath);
+        string json = File.ReadAllText(characterPath);
             Debug.Log(json);
 
+        Debug.Log(titles[0].ToString());
             // data = fileData Object
             // topic1 = Cabinet
             // topic2 = Family
             JsonUtility.FromJsonOverwrite(json, tData);
 
-        int buttonCount = 0;
-        int titleCount = 0;
-
-
-                foreach(GameObject i in entryButtons)
+                for (int i = 0; i < entries.Length; i++)
                 {
-                    //set text on entry buttons
-                    i.GetComponent<Text>().text = tData.topic1[buttonCount];
-                    
-                    //set paragraphs
 
-                Debug.Log(titles[buttonCount]);
-            buttonCount++;
+                //set text on entry buttons
+                entryButtons[i].GetComponent<Text>().text = tData.topic1[i];
+                //set titles
+                Debug.Log(i);
+                titles[i].GetComponent<Text>().text = tData.topic1[i].ToUpper();
+                entries[i].SetActive(false);
+
+            
+                Debug.Log(titles[i]);
                 }
 
-                foreach (GameObject i in titles)
-                {
-                    //set titles
-                    i.GetComponent<Text>().text = tData.topic1[titleCount].ToUpper();
-
-            //set paragraphs
-            titleCount++;
-                }
-        
-
-
-
-
-
-
-        Debug.Log(tData.topic2[0]);
+                Debug.Log(tData.topic2[0]);
 
     }
     

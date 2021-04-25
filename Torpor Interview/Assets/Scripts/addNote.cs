@@ -13,6 +13,7 @@ public class addNote : MonoBehaviour
     public Transform bulletParent;
     private string path;
     private Vector3 lastBulletPos = new Vector3(-7, 3.75f, 0);
+    private GameObject bulletObj;
 
 
 
@@ -26,27 +27,27 @@ public class addNote : MonoBehaviour
     {
        
 
-        if (GameObject.Find("Act1").activeInHierarchy && GameObject.Find("Act1") != null)
+        if (GameObject.Find("Act1") != null)
         {
             bulletParent = GameObject.Find("Act1").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act1.json";
             Debug.Log("Act1");
         }
-        else if (GameObject.Find("Act2").activeInHierarchy && GameObject.Find("Act2") != null)
+        else if (GameObject.Find("Act2") != null)
         {
-            //bulletParent = GameObject.Find("Act2").transform;
+            bulletParent = GameObject.Find("Act2").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act2.json";
             Debug.Log("Act2");
         }
-        else if (GameObject.Find("Act3").activeInHierarchy && GameObject.Find("Act3") != null)
+        else if (GameObject.Find("Act3") != null)
         {
-            //bulletParent = GameObject.Find("Act3").transform;
+            bulletParent = GameObject.Find("Act3").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act3.json";
             Debug.Log("Act3");
         }
-        else if (GameObject.Find("Act4").activeInHierarchy && GameObject.Find("Act4") != null)
+        else if (GameObject.Find("Act4") != null)
         {
-            //bulletParent = GameObject.Find("Act4").transform;
+            bulletParent = GameObject.Find("Act4").transform;
             path = @"C:\Users\Admin\Documents\GitHub\torpor-interview\Torpor Interview\Assets\JSON\act4.json";
             Debug.Log("Act4");
         }
@@ -67,11 +68,11 @@ public class addNote : MonoBehaviour
         //create bullet object from prefab
         //use last y-value to determine position
         //instantiate as child of Act Object
-        GameObject bulletObj = Instantiate(bullet) as GameObject;
+        bulletObj = Instantiate(bullet) as GameObject;
         bulletObj.transform.position = lastBulletPos;
         bulletObj.transform.rotation = transform.rotation;
         bulletObj.transform.SetParent(bulletParent);
-        //bulletObj.GetComponent<Text>().text = "pizza";
+        bulletObj.transform.GetChild(0).GetComponent<Text>().text = data.inputText;
 
 
         lastBulletPos.y = lastBulletPos.y - 1;
@@ -87,6 +88,9 @@ public class addNote : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(bulletObj.GetComponent<Button>().enabled)
+        {
+            //lastBulletPos = new Vector3(-7, 3.75f, 0);
+        }
     }
 }
